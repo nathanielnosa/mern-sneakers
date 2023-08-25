@@ -1,0 +1,16 @@
+{
+  "name": "mern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-server": "cd backend && npm install",
+    "start-server": "cd backend && node index.js",
+    "install-client": "cd merncomerce && npm install",
+    "build-client": "cd merncomerce && npm run build",
+    "start-client": "cd merncomerce && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

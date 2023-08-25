@@ -21,6 +21,7 @@ import Contact from './pages/Contact.jsx'
 import Login from './pages/Login.jsx'
 import Register from './pages/Register.jsx'
 import NewProducts from './pages/NewProducts.jsx'
+import Cart from './pages/Cart.jsx';
 
 
   const routers = createBrowserRouter(
@@ -28,11 +29,12 @@ import NewProducts from './pages/NewProducts.jsx'
       <Route path="/" element={<App/>}>
         <Route index element={<Home/>}/>
         <Route path='about' element ={<About/>}/>
-        <Route path='sneakers' element={<Sneakers/>}/>
+        <Route path='sneakers/:id' element={<Sneakers/>}/>
         <Route path='contact' element={<Contact/>}/>
         <Route path='login' element={<Login/>}/>
         <Route path='register' element={<Register/>}/>
         <Route path='newproduct' element={<NewProducts/>}/>
+        <Route path='cart' element={<Cart/>}/>
       </Route>
     )
   ) 

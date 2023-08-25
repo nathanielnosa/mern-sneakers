@@ -91,7 +91,7 @@ const productSchema = mongoose.Schema({
     pCat: String,
     pPrice: Number,
     pDesc: String,
-    Image: String,
+    image: String,
 })
 
 // model
@@ -107,7 +107,12 @@ app.post('/addproduct',async (req,res)=>{
     res.send({message:'A new product added successfully!', alert:true})
 })
 
-
+// get all product
+app.get('/products',async (req,res)=>{
+    // get data from mongodb
+    const data = await productModel.find({})
+    res.send(JSON.stringify(data));
+});
 
 
 app.listen(PORT,()=>console.log(`server running on port ${PORT}`))
