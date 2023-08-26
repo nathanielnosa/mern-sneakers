@@ -8,7 +8,7 @@
     "start-server": "cd backend && node index.js",
     "install-client": "cd merncomerce && npm install",
     "build-client": "cd merncomerce && npm run build",
-    "start": "cd merncomerce && npm run start"
+    "start-client": "cd merncomerce && npm run start"
   },
   "keywords": [],
   "author": "",
